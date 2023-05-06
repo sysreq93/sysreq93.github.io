@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+	<template>
+		
+		<do type="option" name="WAPhome" label="WAP Portal Tin.it">
+			<go href="index.wml"/>
+		</do>
+
+		
+		<do type="prev"><prev/>
+		</do>
+
+	</template>
+
+
+<card id="start" title="WAP Portal Tin.it"> 
+ <p align="left"><b>Info WAP:</b></p>
+
+   <p><a href="cosawap.wml">Cosa e' WAP</a></p>
+   <p><a href="perchewap.wml">Perche' WAP</a></p>
+   <p><a href="cosaserve.wml">Cosa vi serve</a></p>
+
+<p align="left">
+   <small>&#169; Tin.it 2000 <anchor>wapinfo@tin.it<go href="http://webcab.de/cgi-bin/sendmail.cgi/f-it">
+<setvar name="a" value="Invia e-mail"/>
+<setvar name="b" value="inserisci testo"/>
+<setvar name="c" value=""/>
+<setvar name="f" value=""/>
+<setvar name="h" value="http://wap.tin.it/aiuto.wml"/>
+<setvar name="p" value="WAP TIN"/>
+<setvar name="s" value="[informazioni] wap"/>
+<setvar name="t" value="wapinfo@tin.it"/>
+<setvar name="u" value="http://wap.tin.it/index.wml"/></go>
+</anchor></small></p>
+</card>
+<card id="go" title="open URL">
+	<do type="prev" label="Indietro"><prev/></do>
+	<p>Indirizzo:&nbsp; <input name="url" value="http://" format="*m"/></p>
+	<p align="center"><anchor>go there!<go href="$(url:u)"/></anchor></p>
+</card>
+</wml>
