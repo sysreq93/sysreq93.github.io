@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE wml PUBLIC "-//WAPFORUM//DTD WML 1.1//EN" "http://www.wapforum.org/DTD/wml_1.1.xml">
+<wml>
+
+	<template>
+		
+		<do type="option" name="WAPhome" label="WAP Portal Tin.it">
+			<go href="index.wml"/>
+		</do>
+
+		
+		<do type="prev"><prev/>
+		</do>
+
+	</template>
+
+
+<card id="start" title="WAP Portal Tin.it"> 
+ <p align="left"><b>Cosa e' WAP:</b></p>
+
+    <p>WAP (Wireless Application Protocol) � un insieme di protocolli (regole di comunicazione tra due entita') simili ai "normali" protocolli Internet, adattati alle caratteristiche del canale radio GSM (instabilita' e banda - cioe' velocita' di trasmissione - ridotta) che rendono possibile la navigazione Internet disponendo di particolari cellulari, senza PC ne' modem, cavi ecc...
+  <br/>
+  <br/>
+  In sostanza, al PC su cui e' installato il browser, subentra il telefonino WAP (da vedersi come un PC ridotto ai minimi termini, con un display e capacita' elaborative minimali) che ha un modem integrato ed e' equipaggiato con un "microbrowser". 
+  Per maggiori informazioni consulta il sito:<br/>http://www.tinmobile.it [con un browser PC]</p>
+
+<p align="left">
+   <small>&#169; Tin.it 2000 <anchor>wapinfo@tin.it<go href="http://webcab.de/cgi-bin/sendmail.cgi/f-it">
+<setvar name="a" value="Invia e-mail"/>
+<setvar name="b" value="inserisci testo"/>
+<setvar name="c" value=""/>
+<setvar name="f" value=""/>
+<setvar name="h" value="http://wap.tin.it/aiuto.wml"/>
+<setvar name="p" value="WAP TIN"/>
+<setvar name="s" value="[informazioni] wap"/>
+<setvar name="t" value="wapinfo@tin.it"/>
+<setvar name="u" value="http://wap.tin.it/index.wml"/></go>
+</anchor></small></p>
+</card>
+<card id="go" title="open URL">
+	<do type="prev" label="Indietro"><prev/></do>
+	<p>Indirizzo:&nbsp; <input name="url" value="http://" format="*m"/></p>
+	<p align="center"><anchor>go there!<go href="$(url:u)"/></anchor></p>
+</card>
+</wml>
