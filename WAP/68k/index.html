@@ -1,4 +1,9 @@
-const RSS_URL = `https://codepen.io/picks/feed/`;
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+const RSS_URL = `https://news.google.com/rss?gl=US&hl=en-US&ceid=US:en`;
 
 fetch(RSS_URL)
   .then(response => response.text())
@@ -6,7 +11,7 @@ fetch(RSS_URL)
   .then(data => {
     console.log(data);
     const items = data.querySelectorAll("item");
-    let html = ``;
+    let html = `TEST`;
     items.forEach(el => {
       html += `
         <article>
@@ -19,13 +24,10 @@ fetch(RSS_URL)
         </article>
       `;
     });
-    document.body.insertAdjacentHTML("beforeend", html);
-  });
+    document.body.insertAdjacentHTML("beforeend", `TEST`);
+</script>
 
-<!DOCTYPE html>
-<html>
-<body>
-Test
 </body>
 </html>
+
 
