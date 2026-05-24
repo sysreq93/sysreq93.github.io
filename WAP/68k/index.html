@@ -11,8 +11,8 @@ fetch(RSS_URL)
   .then(data => {
     console.log(data);
     const items = data.querySelectorAll("item");
-    let html = `TEST`;
-    /*items.forEach(el => {
+    let html = ``;
+    items.forEach(el => {
       html += `
         <article>
           <img src="${el.querySelector("link").innerHTML}/image/large.png" alt="">
@@ -23,7 +23,7 @@ fetch(RSS_URL)
           </h2>
         </article>
       `;
-    });*/
+    });
   document.body.insertAdjacentHTML("beforeend", html);
 </script>
 
